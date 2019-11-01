@@ -9,7 +9,7 @@ class Student
   def initialize(student_hash)
     #binding.pry
     @name = student_hash.fetch(:name) 
-    #@name = student_hash.fetch(:name) 
+    @location = student_hash.fetch(:location) 
   end
 
   def self.create_from_collection(students_array)
