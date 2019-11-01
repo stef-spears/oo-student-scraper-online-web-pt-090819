@@ -17,6 +17,7 @@ class Student
     
     students_array.each do |student|
       binding.pry
+      self.new(student)
     end
   end
 
