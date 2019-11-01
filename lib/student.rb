@@ -7,7 +7,6 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    
     @name = student_hash.fetch(:name) 
     @location = student_hash.fetch(:location) 
     @@all << self
@@ -23,6 +22,9 @@ class Student
 
   def add_student_attributes(attributes_hash)
     binding.pry
+    attributes_hash.each do |attribute|
+      
+    end
   end
 
   def self.all
