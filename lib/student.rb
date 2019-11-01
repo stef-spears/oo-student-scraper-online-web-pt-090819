@@ -24,7 +24,8 @@ class Student
     
     attributes_hash.each do |k, v|
       binding.pry
-      self 
+      self[k] = true if self.has_value?(v)
+      # grocery_item["food"] = true if grocery_item.has_value?("Bread") 
     end
   end
 
