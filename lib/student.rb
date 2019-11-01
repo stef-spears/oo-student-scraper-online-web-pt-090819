@@ -24,6 +24,7 @@ class Student
     
     attributes_hash.each do |k, v|
       binding.pry
+      self 
     end
   end
 
