@@ -10,6 +10,7 @@ class Student
     #binding.pry
     @name = student_hash.fetch(:name) 
     @location = student_hash.fetch(:location) 
+    @@all << self
   end
 
   def self.create_from_collection(students_array)
